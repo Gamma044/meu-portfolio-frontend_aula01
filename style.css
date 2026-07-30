@@ -18,6 +18,7 @@ p {
 
 ul {
     background-color: #ffffff; /* Fundo branco para a lista */
+    text-align: center;
     padding: 20px;
     width: 300px;              /* Largura da caixa */
     margin: 0 auto;            /* Centraliza a caixa da lista na tela */
