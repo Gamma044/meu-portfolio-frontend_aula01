@@ -1,0 +1,24 @@
+body {
+    background-color: #e2e8f0; 
+    font-family: Arial, sans-serif;
+    color: #333333; 
+}
+
+h1 {
+    background-color: #1e293b; /* Fundo azul escuro */
+    color: #ffffff;            /* Texto branco */
+    text-align: center;        /* Alinhamento ao centro */
+    padding: 20px;             /* Espaço interno para o texto respirar */
+}
+
+p {
+    text-align: center;        /* Texto centralizado */
+    color: #475569;            /* Tom de cinza para o texto */
+}
+
+ul {
+    background-color: #ffffff; /* Fundo branco para a lista */
+    padding: 20px;
+    width: 300px;              /* Largura da caixa */
+    margin: 0 auto;            /* Centraliza a caixa da lista na tela */
+}
