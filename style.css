@@ -22,3 +22,10 @@ ul {
     width: 300px;              /* Largura da caixa */
     margin: 0 auto;            /* Centraliza a caixa da lista na tela */
 }
+
+h2 {
+    background-color: #0062ff; 
+    color: #ffffff;            /* Texto branco */
+    text-align: center;        /* Alinhamento ao centro */
+    padding: 20px;             /* Espaço interno para o texto respirar */
+}
