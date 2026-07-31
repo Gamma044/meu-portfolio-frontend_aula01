@@ -1,61 +1,98 @@
 body {
     background-color: #e2e8f0; /* Cor de fundo cinza claro */
     font-family: Arial, sans-serif;
-    color: #333333; /* Cor do texto geral */
+    color: #333333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o cartão horizontalmente */
+    align-items: center;     /* Centraliza o cartão verticalmente */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-h1 {
-    background-color: #1e293b; /* Fundo azul escuro */
-    color: #ffffff;            /* Texto branco */
-    text-align: center;        /* Alinhamento ao centro */
-    padding: 20px;             /* Espaço interno para o texto respirar */
+/* CAIXA PRINCIPAL DO PORTFÓLIO (CARTÃO) */
+.cartao {
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    width: 100%;
+    max-width: 600px;         /* Limita a largura máxima do seu site */
+    border-radius: 12px;      /* Arredonda os cantos do site inteiro */
+    overflow: hidden;         /* Impede que o conteúdo passe das bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave no fundo */
 }
 
-p {
-    text-align: center;        /* Texto centralizado */
-    color: #475569;            /* Tom de cinza para o texto */
+/* 1. ESTILO DO BANNER */
+.cabecalho {
+    position: relative;
+    width: 100%;
 }
 
-ul {
-    background-color: #ffffff; /* Fundo branco para a lista */
-    text-align: center;
-    padding: 20px;
-    width: 300px;              /* Largura da caixa */
-    margin: 0 auto;            /* Centraliza a caixa da lista na tela */
-    list-style-type: none;     /* Remove as bolinhas da lista para combinar com o alinhamento */
-}
-
-h2 {
-    background-color: #0062ff; 
-    color: #ffffff;            /* Texto branco */
-    text-align: center;        /* Alinhamento ao centro */
-    padding: 20px;             /* Espaço interno para o texto respirar */
-}
-
-/* ==========================================
-   ESTILIZAÇÃO DE IMAGENS
-   ========================================== */
-
-/* 1. ESTILO DO BANNER (Capa do topo) */
 .img-banner {
-    width: 100%;             /* Ocupa toda a largura disponível */
-    height: 180px;           /* Define uma altura fixa para a capa */
-    object-fit: cover;       /* CORTE INTELIGENTE: Impede que a imagem fique esticada ou esmagada! */
-    border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
+    width: 100%;             /* Ocupa 100% da largura do cartão */
+    height: 180px;           /* Altura fixa controlada */
+    object-fit: cover;       /* Ajuste inteligente da imagem */
+    display: block;
 }
 
 /* 2. ESTILO DA FOTO DE PERFIL */
-.img-perfil {
-    width: 130px;            /* Largura exata da foto */
-    height: 130px;           /* Altura igual à largura (para ser um quadrado perfeito) */
-    object-fit: cover;       /* Ajusta a foto sem distorcer o rosto */
-    border-radius: 50%;      /* O TRUQUE: Transformando a foto quadrada em um círculo perfeito! */
-    border: 4px solid #ffffff; /* Borda branca estilizada em volta da foto */
-    margin-top: -65px;       /* Sobrepõe a foto levemente por cima do banner */
+.perfil-container {
+    text-align: center;      /* Garante a foto centralizada */
+    width: 100%;
 }
 
-/* Centralizando as informações do perfil */
-.perfil-container {
+.img-perfil {
+    width: 130px;            /* Largura controlada */
+    height: 130px;           /* Altura idêntica para manter o quadrado perfeito */
+    object-fit: cover;       /* Não distorce o seu rosto */
+    border-radius: 50%;      /* Recorta em círculo perfeito */
+    border: 4px solid #ffffff; /* Borda branca elegante */
+    margin-top: -65px;       /* Puxa a foto para cima do banner */
+    position: relative;
+    z-index: 10;
+}
+
+/* ÁREA DE TEXTOS ABAIXO DA FOTO */
+.conteudo {
+    padding: 20px 30px 40px 30px; /* Espaçamento interno confortável */
     text-align: center;
-    padding: 0 20px 20px 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1e293b;          /* Azul escuro profissional */
+    margin: 15px 0 10px 0;
+}
+
+.biografia {
+    font-size: 16px;
+    color: #475569;          /* Cinza sutil para leitura agradável */
+    line-height: 1.6;        /* Melhora o espaçamento entre as linhas */
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #0062ff;          /* Azul de destaque para as ferramentas */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* LISTA DE FERRAMENTAS */
+.lista-ferramentas {
+    list-style-type: none;   /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Alinha os itens lado a lado no centro */
+    gap: 15px;               /* Dá um espaço entre cada palavra */
+}
+
+.lista-ferramentas li {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 8px 16px;
+    border-radius: 20px;     /* Efeito de etiquetas/tags modernas */
+    font-weight: bold;
+    font-size: 14px;
 }
